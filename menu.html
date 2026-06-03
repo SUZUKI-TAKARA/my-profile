@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+</head>
+<body class="bg-green-100 flex justify-center items-center p-4">   
+    
+    <div class="bg-green-300 shadow text-black  justify-center items-center w-full max-w-6xl min-h-screen p-10 rounded-lg">
+        <header class="bg-white border-b px-6 py-4 flex flex-col md:flex-row items-center justify-between rounded-lg">
+            <!-- 左：ロゴ -->
+            <div class="flex gap-6">
+                <a href="#">
+                <img src="img\食堂ロゴ.jpg" alt="食堂 ひととき" class="h-8 shadow rounded-full hover:scale-105">
+                </a>
+                <p class="font-bold hover:scale-105">食堂　ひととき</p>
+            </div>
+
+            <!-- 右：ナビゲーション -->
+            <nav>
+                <ul class="flex gap-6">
+                    <li><a href="#about" class="text-gray-600 hover:text-gray-900 hover:scale-105 md:hover:scale-105 inline-block">お問い合わせ</a></li>
+                    <li><a href="#works" class="text-gray-600 hover:text-gray-900 hover:scale-105 md:hover:scale-105 inline-block">お仕事</a></li>
+                    <li><a href="#contact" class="text-gray-600 hover:text-gray-900 hover:scale-105 md:hover:scale-105 inline-block">検索</a></li>
+                </ul>
+            </nav> 
+        </header>
+    <h1 class="text-3xl font-bold text-center justify-center mt-10">ＭＥＮＵ</h1>
+        <div class="max-w-fit mx-auto rounded-lg  p-2 bg-green-300 gap-2 grid grid-cols-2 md:grid-cols-4">
+        
+    
+            <div class="bg-white mx-2 rounded-lg hover:scale-105 md:col-span-2 hover:scale-105">
+                <img src="img\和食セット.jpg" alt="和食セット" class="rounded-t-lg shadow-md items-center w-full h-64 object-cover">
+                <button class="text-gray-700 m-2 font-bold hover:text-blue-500">和食セット <span class="text-lg font-bold mx-2">￥1250</span></button>
+                <p class="text-gray-700 m-2">煮魚をメインに、卵焼きや漬物、お味噌汁、梅干しご飯が並ぶ、彩り豊かなバランスの良い日本の定食です。</p>
+            </div>
+            <div class="bg-white mx-2 rounded-lg hover:scale-105 md:col-span-2 hover:scale-105">
+                <img src="img\洋食セット.jpg" alt="洋食セット" class="rounded-t-lg shadow-md items-center w-full h-64 object-cover">
+                <button class="text-gray-700 m-2 font-bold hover:text-blue-500">洋食セット<span class="text-lg font-bold mx-2">￥1350</span></button>
+                <p class="text-gray-700 m-2">スクランブルエッグにカリカリベーコン、彩り豊かなサラダやスープを添えた、休日の朝にぴったりの洋風プレートです。</p>
+            </div>
+            
+
+            <div class="bg-white mx-2 rounded-lg hover:scale-105 md:col-span-2 hover:scale-105">
+                <img src="img\アボカドトースト３.jpg" alt="アボカドトースト" class="rounded-t-lg shadow-md items-center w-full h-64 object-cover">
+                <button class="text-gray-700 m-2 font-bold hover:text-blue-500">アボカドトースト <span class="text-lg font-bold mx-2">￥950</span></button>
+                <p class="text-gray-700 m-2">美しく重なるアボカドに卵とマイクログリーンを添えて。レッドペッパーがピリッと効いた大満足の一皿。</p>
+            </div>
+            
+            <div class="bg-white mx-2 rounded-lg hover:scale-105 md:col-span-2 hover:scale-105">
+                <img src="img\クロックムッシュ３.jpg" alt="クロックムッシュ" class="rounded-t-lg shadow-md items-center w-full h-64 object-cover">
+                <button class="text-gray-700 m-2 font-bold hover:text-blue-500">クロックムッシュ<span class="text-lg font-bold mx-2">￥950</span></button>
+                <p class="text-gray-700 m-2">香ばしくこんがりと焼き上げた濃厚チーズに、旨味溢れるベーコン。贅沢なコクが口いっぱいに広がります。</p>
+            </div>
+            <div class="bg-white mx-2 rounded-lg hover:scale-105">
+                <img src="img\抹茶ラテ３.jpg" alt="抹茶ラテ" class="rounded-t-lg shadow-md items-center w-full h-64 object-cover">
+                <button class="text-gray-700 m-2 font-bold hover:text-blue-500">抹茶ラテ <span class="text-lg font-bold mx-2">￥450</span></button>
+                <p class="text-gray-700 m-2">竹製コースターに映えるきめ細かな泡。抹茶パウダーが香る、金属ストローで味わうモダンな一杯です。</p>
+            </div>
+            <div class="bg-white mx-2 rounded-lg hover:scale-105">
+                <img src="img\カフェラテ３.jpg" alt="カフェラテ" class="rounded-t-lg shadow-md items-center w-full h-64 object-cover">
+                <button class="text-gray-700 m-2 font-bold hover:text-blue-500">カフェラテ <span class="text-lg font-bold mx-2">￥450</span></button>
+                <p class="text-gray-700 m-2">温かみのある陶器のカップに描かれた、美しいラテアート。目と舌で贅沢な余韻を楽しむ本格ラテです。</p>
+            </div>
+            <div class="bg-white mx-2 rounded-lg hover:scale-105">
+                <img src="img\チョコレートケーキ３.jpg" alt="チョコレートケーキ" class="rounded-t-lg shadow-md items-center w-full h-64 object-cover">
+                <button class="text-gray-700 m-2 font-bold hover:text-blue-500">チョコレートケーキ <span class="text-lg font-bold mx-2">￥600</span></button>
+                <p class="text-gray-700 m-2">濃厚なチョコガナッシュの層に、甘酸っぱいラズベリーをトッピング。至福のハーモニーを堪能できる一品。</p>
+            </div>
+            <div class="bg-white mx-2 rounded-lg hover:scale-105">
+                <img src="img\ベリーケーキ３.jpg" alt="ベリーケーキ" class="rounded-t-lg shadow-md items-center w-full h-64 object-cover">
+                <button class="text-gray-700 m-2 font-bold hover:text-blue-500">ベリーケーキ <span class="text-lg font-bold mx-2"></span>￥500</span></button>
+                <p class="text-gray-700 m-2">濃厚なチーズケーキに、フレッシュなブルーベリーと鮮やかなソースが彩りを添える爽やかなデザート。</p>
+            </div>
+            <!-- <div class="bg-white mx-2 rounded-lg shadow-md -[400px]">
+                <img src="img\抹茶ラテ３.jpg" alt="抹茶ラテ" class="rounded-t-lg shadow-md items-center w-full h-64 object-cover">
+                <button class="text-gray-700 m-2 font-bold hover:text-blue-500">抹茶ラテ <span class="text-lg font-bold mx-2">　　　　￥450</span></button>
+                <p class="text-gray-700 m-2">竹製コースターに映えるきめ細かな泡。抹茶パウダーが香る、金属ストローで味わうモダンな一杯です。</p>
+            </div>
+            <div class="bg-white mx-2 rounded-lg shadow-md h-[400px]">
+                <img src="img\抹茶ラテ３.jpg" alt="チョコレートケーキ" class="rounded-t-lg shadow-md items-center w-full h-64 object-cover">
+                <button class="text-gray-700 m-2 font-bold hover:text-blue-500">チョコレートケーキ <span class="text-lg font-bold mx-2">　　￥600</span></button>
+                <p class="text-gray-700 m-2">濃厚なチョコガナッシュの層に、甘酸っぱいラズベリーをトッピング。至福のハーモニーを堪能できる一品。</p>
+            </div>
+            <div class="bg-white mx-2 rounded-lg shadow-md h-[400px]">
+                <img src="img\抹茶ラテ３.jpg" alt="ベリーケーキ" class="rounded-t-lg shadow-md items-center w-full h-64 object-cover">
+                <button class="text-gray-700 m-2 font-bold hover:text-blue-500">ベリーケーキ <span class="text-lg font-bold mx-2">　　　￥500</span></button>
+                <p class="text-gray-700 m-2">濃厚なチーズケーキに、フレッシュなブルーベリーと鮮やかなソースが彩りを添える爽やかなデザート。</p>
+            </div> -->
+        </div>
+        
+    </div>
+</body>
+</html>

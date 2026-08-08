@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 min-h-screen p-8 flex flex-col items-center">
+    <header class="font-bold text-4xl text-center bg-gray-400 rounded-lg shadow w-96 mb-3 p-2">member</header>
+    <h1 class="text-2xl font-bold mb-6"></h1>
+    <div id="memberList" class="grid grid-cols-3 gap-3"></div>
+
+<script>
+    const members = [
+        { name:"松田敏明" , role:"役職： 58歳 クリスチャン🚹" , comment:"" },
+        { name:"島田宗也" ,role:"役職： 19歳 大学生🚹" , comment:"みんな、楽しんでいソウヤ！" },
+        { name:"庄司智之" ,role:"役職： 38歳 テレビマネージャー🚹" , comment:"俺の持ってるタレントみんな売れてるわ" },
+        { name:"森祐樹" ,role:"役職： 28歳 数学教師🚹" , comment:"この点はでねえぇよぉ！！" },
+        { name:"前田陽菜", role:"役職： 21歳 キャバ嬢🚺" , comment:"私以外みんな男でバリ気まずい" }
+    ]
+
+    const memberList = document.getElementById("memberList");
+    members.forEach((member) => {
+        const card = document.createElement("div");
+        card.className = "bg-white rounded-lg shadow p-4 my-1 text-center w-72";
+
+        card.innerHTML = `
+        <h1 class="font-bold text-2xl text-black mr-3">${member.name}</h1>
+        <p class="text-gray-400 mb-2">${member.role}</p>
+        <p class="text-black mb-2">${member.comment}</p>
+        `;
+
+        memberList.appendChild(card);
+    });
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    </script>
+</body>
+</html>

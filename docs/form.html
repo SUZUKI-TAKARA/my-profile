@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>申し込みフォーム</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 min-h-screen flex justify-center items-center">
+  <div class="bg-white rounded-lg p-8 shadow w-full max-w-md">
+      <h1 class="font-bold text-xl mb-6">ユーザー登録</h1>
+      <form novalidate id="signupForm" class="space-y-4">
+          <div>
+              <label for="name" class="font-bold text-sm mb-2">お名前</label>
+              <input 
+              type="text" 
+              id="name1"               
+              required
+              class="rounded-md w-full border px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400"
+              placeholder="名前を入力してください"
+              >
+          </div>
+          <div>
+              <label for="email" class="font-bold text-sm mb-2">メールアドレス</label>
+              <input 
+                type="email"
+                id="email1"
+                required
+                class="rounded-md w-full border px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400"
+                placeholder="メールアドレスを入力"
+              >
+          </div>
+          <div>
+              <label for="password" class="font-bold text-sm mb-2">パスワード（8文字以上）</label>
+              <input 
+              type="password"
+              id="password1"
+              required
+              class=" rounded-md w-full border px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400"
+              minlength="8">
+          </div>
+          <div class="flex items-center gap-2 mb-4">
+            <input 
+              type="checkbox"
+              id="agree"
+              required
+            >
+            <label for="agree" class="text-gray-700 text-sm mb-4">
+                利用規約に同意する
+            </label>
+          </div>
+          <p id="message" class="text-sm font-medium"></p>
+          <button class="bg-blue-600 rounded-md p-2 text-white hover:bg-blue-700 font-bold w-full">登録する</button>
+      </form>
+    </div>
+    
+    <script>
+        const form = document.getElementById("signupForm");
+        const message = document.getElementById("message");
+
+        form.addEventListener("submit", (event) => {
+        event.preventDefault()
+
+        const name = document.getElementById("name1").value.trim();
+        const email = document.getElementById("email1").value.trim();
+        const password = document.getElementById("password1").value;
+        const agree = document.getElementById("agree").checked;
+
+        if (name ==="") {
+          message.textContent = "名前を入力してください";
+          message.className = "text-sm font-medium text-red-500";
+          name1.className = "rounded-md w-full border px-3 py-2 outline-none ring-2 ring-red-400";
+          return;
+        }
+  
+        if (email === "") {
+          message.textContent = "メールアドレスを記入してください";
+          message.className = "text-sm font-medium text-red-500";
+          email1.className = "rounded-md w-full border px-3 py-2 outline-none ring-2 ring-red-400";
+          return;
+        }
+
+        if (password.length < 8) {
+          message.textContent = "パスワードを入8文字以上で入力してください";
+          message.className = "text-sm font-medium text-red-500";
+          password1.className = "rounded-md w-full border px-3 py-2 outline-none ring-2 ring-red-400";
+          return;
+        }
+
+        if (!agree) {
+          message.textContent = "利用規約に同意してください";
+          message.className = "text-sm font-medium text-red-500";
+          return;
+        }
+
+      message.textContent = "登録完了！ようこそ、" + name + "さん！";
+      message.className = "text-sm font-medium text-green-600";    
+
+      });
+  </script>
+</body>
+</html>

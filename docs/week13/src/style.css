@@ -1,0 +1,50 @@
+:root {
+  font-family: sans-serif;
+  color: #333;
+  background: #f1f5f9;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+}
+
+.counter {
+  width: min(90%, 500px);
+  margin: 100px auto;
+  padding: 40px 24px;
+  text-align: center;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 15px #0002;
+}
+
+h1 {
+  margin-bottom: 32px;
+}
+
+#count {
+  font-size: 64px;
+  font-weight: bold;
+  margin: 24px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  background: #2563eb;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #1d4ed8;
+}
